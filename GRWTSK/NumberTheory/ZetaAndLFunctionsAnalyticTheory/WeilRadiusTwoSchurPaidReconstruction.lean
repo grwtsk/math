@@ -3,13 +3,16 @@ Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
 Authors: grwtsk contributors.
 
-SOURCE_PROOF_CANDIDATE / LEAN_COMPILATION_NOT_RUN /
-FRESH_KERNEL_NOT_RUN / TRANSITIVE_AXIOM_AUDIT_NOT_RUN /
-INDEPENDENT_ANALYTICAL_REVIEW_NOT_RUN.
+Verification scope: the unchanged integer-data module and the retained-coordinate
+return target have source-bound compilation and separate exact-target kernel
+replay. The two data definitions have no axioms; the five coordinate-return
+theorems use only propext, Classical.choice and Quot.sound. This does not claim
+replay of the imported closure. The separate finite paid row-budget and LDL
+certificate remain unaccepted; the whole high floor remains open. Independent
+analytical review has not been run.
 -/
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRadiusTwoSchurPaidReconstructionData
 import GRWTSK.NumberTheory.ZetaAndLFunctionsAnalyticTheory.WeilRadiusTwoTrialProjection
-import Mathlib.Tactic.NativeDecide
 
 /-!
 # Rank-four rational reconstruction for the radius-two bordered head
@@ -20,9 +23,18 @@ in `WeilRadiusTwoSchurPaidReconstructionData`. The factors were proposed by
 Schur optimization of the complete finite paid form, but the declarations
 below use only their exact integer entries.
 
+For a retained physical row, `headSlot` has index below 64, so the definition
+selects its Kronecker identity branch. The pole row is definitionally zero on
+physical columns and one on the pole column. Splitting the physical and pole
+ports proves the rational row identity without evaluating either middle
+factor array. Casting preserves the entries zero and one; multiplying an
+identity row by an arbitrary real vector returns that coordinate. The two
+physical index casts have the same value, as checked by `Fin.ext`.
+
 The exact coordinate-return theorem is the typed input required by the
 existing radius-two whole-window consumer. No source sign, high floor,
-`StageLower`, RH, or GRH conclusion is asserted in this file.
+`StageLower`, RH, or GRH conclusion is asserted in this file. In particular,
+this head identity does not establish the actual `1/5` high floor at `N = 64`.
 -/
 
 set_option autoImplicit false
@@ -79,11 +91,15 @@ def reconstruction : Matrix Trial Head ℝ :=
   reconstructionQ.map (Rat.castHom ℝ)
 
 /-- Entrywise identity on every retained source row. -/
-set_option maxHeartbeats 0 in
 theorem reconstructionQ_head_entry :
     ∀ i j : Head,
       reconstructionQ (headSlot i) j = if i = j then 1 else 0 := by
-  native_decide
+  intro i j
+  rcases i with i | ⟨⟩ <;> rcases j with j | ⟨⟩
+  · simp [reconstructionQ, headSlot, i.isLt, Fin.ext_iff]
+  · simp [reconstructionQ, headSlot, i.isLt]
+  · simp [reconstructionQ, headSlot]
+  · simp [reconstructionQ, headSlot]
 
 theorem reconstruction_head_entry (i j : Head) :
     reconstruction (headSlot i) j = if i = j then 1 else 0 := by
@@ -102,6 +118,10 @@ theorem reconstruction_match (v : Head → ℝ) (i : Head) :
 theorem reconstruction_head (v : Head → ℝ) (i : Fin 64) :
     reconstruction.mulVec v (.inl (Fin.castLE (by decide : 64 ≤ 512) i)) =
       v (.inl i) := by
+  have hslot : Fin.castLE (by decide : 64 ≤ 512) i = Fin.castAdd 448 i := by
+    apply Fin.ext
+    rfl
+  rw [hslot]
   simpa only [headSlot] using reconstruction_match v (.inl i)
 
 theorem reconstruction_pole (v : Head → ℝ) :
