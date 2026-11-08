@@ -199,7 +199,7 @@ theorem frobenius_return_iff_orderOf_dvd
     (u a : UnitFiber n) (m : ℕ) :
     frobeniusIterate u m a = a ↔ orderOf u ∣ m := by
   rw [frobenius_return_iff_pow_eq_one]
-  exact orderOf_dvd_iff_pow_eq_one
+  exact orderOf_dvd_iff_pow_eq_one.symm
 
 /-- Euler's theorem in its exact group-order form. -/
 theorem frobenius_order_dvd_totient (u : UnitFiber n) :
@@ -225,8 +225,10 @@ theorem totient_eq_card_loops_mul_order (u : UnitFiber n) :
     Nat.totient n = Nat.card (FrobeniusLoops u) * orderOf u := by
   have h :=
     Subgroup.card_eq_card_quotient_mul_card_subgroup (frobeniusHolonomy u)
-  rw [Nat.card_eq_fintype_card, ZMod.card_units_eq_totient,
-    card_frobeniusHolonomy] at h
+  have hfiber : Nat.card (UnitFiber n) = Nat.totient n := by
+    rw [Nat.card_eq_fintype_card]
+    exact ZMod.card_units_eq_totient n
+  rw [hfiber, card_frobeniusHolonomy] at h
   exact h
 
 /-- The number of invariant Frobenius loops is exactly
@@ -247,7 +249,7 @@ theorem card_prime_loops_eq_totient_div_order (hn : Nat.Coprime p n) :
 /-- The additive residue-period partition is a separate totient identity. -/
 theorem additive_residue_period_partition (n : ℕ) :
     (∑ d ∈ n.divisors, Nat.totient d) = n := by
-  exact Nat.sum_totient n
+  simpa using Nat.sum_totient n
 
 /-! ## Abstract prime-orbit mapping torus specialization -/
 
