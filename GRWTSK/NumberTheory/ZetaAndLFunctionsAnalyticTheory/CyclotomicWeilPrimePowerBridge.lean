@@ -270,4 +270,34 @@ theorem nonzero_weight_cyclotomic_coefficient_as_frobenius_power
     _ = _ :=
       cyclotomicResidueCoefficient_prime_pow χ hp hbase
 
+/-- The logarithmic shift of a nonzero-weight source label is the exponent
+multiple of the logarithm of its canonical prime base. -/
+theorem nonzero_primeWeight_log_eq_exponent_mul_log_minFac
+    {m : ℕ} (hweight : primeWeight m ≠ 0) :
+    Real.log (m : ℝ) =
+      (m.factorization m.minFac : ℝ) * Real.log (m.minFac : ℝ) := by
+  have hpow := nonzero_primeWeight_minFac_power hweight
+  have hcast : (m : ℝ) =
+      (m.minFac : ℝ) ^ (m.factorization m.minFac) := by
+    exact_mod_cast hpow.symm
+  rw [hcast, Real.log_pow]
+
+/-- On an unramified nonzero-weight source label, the actual paired Weil
+coefficient is literally the real part of the canonical prime Frobenius value
+raised to its exact source exponent. -/
+theorem pairedPrimeWeight_nonzero_unramified_as_frobenius_power
+    (χ : DirichletCharacter ℂ N)
+    {m : ℕ} (hweight : primeWeight m ≠ 0)
+    (hcop : Nat.Coprime m N) :
+    pairedPrimeWeight χ m =
+      primeWeight m *
+        (((((χ.toUnitHom
+          (frobeniusUnit
+            (n := N) (p := m.minFac)
+            (nonzero_primeWeight_minFac_coprime hweight hcop))) ^
+          (m.factorization m.minFac) : ℂˣ)) : ℂ)).re := by
+  rw [pairedPrimeWeight_eq_cyclotomic,
+    nonzero_weight_cyclotomic_coefficient_as_frobenius_power χ hweight hcop]
+
+
 end GRWTSK.NumberTheory.WeilQuadraticForm.CyclotomicPrimePowerBridge
