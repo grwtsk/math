@@ -88,8 +88,8 @@ The uniform Eθ bound, applicability threshold and strict error margin are joint
 premises. None is manufactured from a numerical experiment. In particular a fixed
 positive epsilon does not make the margin hold for every large n. No Legendre
 result follows. The native4.34.0-rc2 package, exact source pins and all three
-expected interfaces are recorded in adapters/ieantn/consumer-integrations.json
-and the canonical ledger anchor ieantn-consecutive-square-consumer-20261029.
+expected interfaces are recorded in the [IEANTN consumer provenance](../../../adapters/ieantn/consumer-integrations.json)
+and [recorded ledger entry](literature/reading-background/paper-to-formalization-references.md#ieantn-consecutive-square-consumer-20261029).
 Compilation, fresh replay, complete axiom audit and interface checking are NOT_RUN.
 The next obligation is an actual analytic-bound/range supplier and native checks;
 a root4.34.1 version-compatible comparison remains separate.

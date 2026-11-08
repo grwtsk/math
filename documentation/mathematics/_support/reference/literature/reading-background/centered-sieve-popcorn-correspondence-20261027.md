@@ -45,7 +45,11 @@ finite presentation of the infinite arithmetic language.
 Verification commands: all native `lake build` / `lake env lean` commands,
 fresh independent kernel replay, and complete transitive axiom audit are
 NOT_RUN, exits UNAVAILABLE, receipts NONE for this increment. Commands and source
-pins are in docs/verification/NumberTheory/Farey/CenteredSieveLanguage/.
+pins are retained in [`shared-center-winding-v0.1.toml`](../../../../_verification/specifications/NumberTheory/shared-center-winding-v0.1.toml).
+The former `docs/verification/NumberTheory/Farey/CenteredSieveLanguage/`
+locator is a historical path; the documentation-layout alias resolves that
+specification to the current file above. Its recorded commands and source pins
+retain their original scope, without a fresh replay or path-translation receipt.
 The large central paper-to-formalization ledger was not replaced or truncated;
 its cross-reference to this exact supplement remains a reconciliation task.
 

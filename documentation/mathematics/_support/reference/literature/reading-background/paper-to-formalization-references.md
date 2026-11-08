@@ -1072,9 +1072,13 @@ and the original adapter/consumer scope in [math #1392](https://github.com/grwts
 
 ## Anthropic provider reconciliation (2026-10-28)
 
-Local attribution: grwtsk contributors. Maintained provider: `adapters/anthropic-math`.
+Local attribution: grwtsk contributors. Maintained provider: [Anthropic adapter guide](../../../../../adapters/anthropic-math/README.md).
 Exact per-file Git blobs, comparator contents, fully qualified adapter modules and
-upstream declaration names are recorded in `adapters/anthropic-math/catalogue.json`.
+upstream declaration names are recorded in the [provider catalogue](../../../../../adapters/anthropic-math/catalogue.json).
+The command example below retains the former `adapters/` root used by this
+recorded reconciliation. For current package locations and isolated dependency
+configuration, follow the maintained provider guide; this path update executes
+no check and transfers no historical evidence to later source bytes.
 Upstream bylines and licenses remain upstream attribution; local verification does
 not follow from upstream CI reports. Every check below is **NOT_RUN**: native
 compilation (`cd adapters/anthropic-math/<project> && lake build`), Comparator,
