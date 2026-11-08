@@ -1,5 +1,4 @@
 /-
-Copyright (c) 2026 grwtsk contributors. Released under the MIT license.
 Research direction: grwtsk contributors. Formalization assistance: ChatGPT.
 Lean and Mathlib retain their original attribution and licenses.
 Status: candidate proof source, NOT elaborated in the pinned environment.

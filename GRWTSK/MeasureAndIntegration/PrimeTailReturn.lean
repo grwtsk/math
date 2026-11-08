@@ -1,5 +1,4 @@
 /-
-Copyright (c) 2026 grwtsk contributors. Released under the MIT license.
 Research direction: grwtsk contributors. Formalization assistance: ChatGPT.
 Status: candidate proof source; NOT compiled. No arithmetic decay is assumed
 or supplied by defining the prime-only reading.

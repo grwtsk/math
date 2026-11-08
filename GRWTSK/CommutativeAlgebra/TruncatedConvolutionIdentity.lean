@@ -1,5 +1,4 @@
 /-
-Copyright (c) 2026 grwtsk contributors. Released under the MIT license.
 Research direction: grwtsk contributors. Formal-source assistance: ChatGPT.
 Classical Vaughan convolution algebra; no novelty claim for the identity.
 Candidate source, NOT compiled. This ring lemma is not yet its complete

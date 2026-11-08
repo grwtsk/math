@@ -1,5 +1,4 @@
 /-
-Released under the repository MIT license.
 Research direction: grwtsk contributors.
 Implementation assistance: OpenAI ChatGPT.
 Candidate source: native compilation and axiom audit NOT_RUN.

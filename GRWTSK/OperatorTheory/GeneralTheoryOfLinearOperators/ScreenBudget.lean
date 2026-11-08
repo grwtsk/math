@@ -1,5 +1,4 @@
 /-
-Copyright (c) 2026 grwtsk contributors. Released under the MIT license.
 Research direction: grwtsk contributors. Formal-source assistance: ChatGPT.
 Status: candidate proof source; not compiled or kernel checked.
 These conditional scalar consumers do not supply an arithmetic source estimate.

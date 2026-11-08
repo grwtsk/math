@@ -1,5 +1,4 @@
 /-
-Copyright (c) 2026 grwtsk contributors. Released under the MIT license.
 Research direction: grwtsk contributors. Proof-source assistance: ChatGPT.
 Candidate scalar budgets only; not compiled. Brun--Titchmarsh, the finite-measure
 kernel identities and their actual arithmetic application are not new axioms.

@@ -1,5 +1,4 @@
 /-
-Copyright (c) 2026 grwtsk contributors. Released under the MIT license.
 Research direction: grwtsk contributors. Formalization assistance: ChatGPT.
 The L-series/logarithmic-derivative theorem is Michael Stoll's Mathlib result;
 Lean, Mathlib, and their authors retain their original licenses and attribution.

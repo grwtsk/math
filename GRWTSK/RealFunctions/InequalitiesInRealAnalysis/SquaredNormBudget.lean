@@ -1,5 +1,4 @@
 /-
-Copyright (c) 2026 grwtsk contributors. Released under the MIT license.
 Candidate proof sources, NOT compiled. The analytic Type-I estimate and its
 source adapter are paper proofs in MATHEMATICS.md, not silently assumed axioms.
 -/

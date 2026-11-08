@@ -1,5 +1,4 @@
 /-
-Copyright (c) 2026 grwtsk contributors. Released under the MIT license.
 Research direction: grwtsk contributors. Formalization assistance: ChatGPT.
 Status: candidate proof source, NOT elaborated. Mathlib retains its attribution.
 -/

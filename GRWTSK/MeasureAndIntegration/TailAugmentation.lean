@@ -1,5 +1,4 @@
 /-
-Copyright (c) 2026 grwtsk contributors. Released under the MIT license.
 Research direction: grwtsk contributors. Formalization assistance: ChatGPT.
 Standard measure-theoretic and Green-kernel results retain their attribution.
 Status: candidate proof source; NOT elaborated or kernel checked.

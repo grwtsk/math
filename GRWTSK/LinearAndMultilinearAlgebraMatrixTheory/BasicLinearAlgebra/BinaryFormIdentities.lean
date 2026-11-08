@@ -1,5 +1,4 @@
 /-
-Copyright (c) 2026 grwtsk contributors. Released under the MIT license.
 Research direction: grwtsk contributors. Proof-source assistance: ChatGPT.
 Candidate scalar proof source; not compiled. No arithmetic estimate is assumed
 true by these algebraic identities. The analytic kernel adapter is in the note.
