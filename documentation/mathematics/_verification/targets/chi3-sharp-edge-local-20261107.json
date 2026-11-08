@@ -1,0 +1,158 @@
+{
+  "actual_finite_source_audit": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "declarations": [
+      "filter_support_exact",
+      "filtered_width_slack",
+      "complex_strip_prefactor",
+      "near_unknown_budget",
+      "low_zero_tail_budget",
+      "local_loss_guard",
+      "shifted_local_margin",
+      "binet_correction_guard",
+      "conductor_log_guard",
+      "local_high_sign_guard",
+      "edge_inventory_retained",
+      "finiteProofData_roundtrip"
+    ],
+    "finite_theorem_count": 12,
+    "fresh_environment_rebuild_of_imports": "NOT_RUN",
+    "fresh_new_terms_kernel_trust_0": "PASS",
+    "independent_human_review": "NOT_RUN",
+    "log_path": ".cache/chi3-sharp-edge-20261107-root/SharpEdgeLocalAudit.log",
+    "log_repository": "grwtsk/noeaaeue",
+    "log_sha256": "a24c53a948ee6fe7160c17ef68c016333ba1d06e79533f7794c3e38c1c1b9663",
+    "printed_transitive_axioms": "PASS_STANDARD_AXIOMS_OR_NONE",
+    "source_copy_compilation": "PASS",
+    "source_path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeSharpEdgeLocal.lean",
+    "source_sha256": "26ef7c1cd22ead3b675c6eec4f6674ca21c1d2b16860df6e56b517ab043867cd",
+    "universal_analytic_Lean_formalization": "NOT_RUN"
+  },
+  "authors": "grwtsk contributors",
+  "comparison": {
+    "distinct_return": "ordinary one-edge local coercive operator plus positive reflected gamma rank decomposition",
+    "hostile_scope_check": "ALL365 reflected signed primes and actual B inverse debt remain in original-source consumer; no two-cap localization dropping interactions",
+    "shared_foundation": "same concrete compact filter and published zero verification as current LowFilter; not an independent proof of those inputs"
+  },
+  "consumed_source_sha256": {
+    "WeilConductorThreeRadiusFourEdgeSchur.lean": "5ad8bd0e1708a3daa3801408d8ebbcc45033a83d49584bce7ac181fc86ec9a7f",
+    "WeilConductorThreeRadiusFourInventory.lean": "ac13e0400afcb7f50c7959d4defebdca3c05bfd15f3db868e24c37c0625f6a54",
+    "WeilConductorThreeRadiusFourLowFilter.lean": "fc0c1b0520ac9df4f4941e7e529182e121add75237e6b69296e063136738070b",
+    "WeilDirichletCompactFilterReturn.lean": "73b3339a6012a1addba52c386f13c8fafc62cd7ddc8f73894bb21d2479c9ce89"
+  },
+  "evidence": {
+    "filter_integer_guards": "consumed current LowFilter recorded exact rational replay; not fresh all-input computation here",
+    "fresh_kernel_check": "PASS_NEW_FINITE_TERMS_TRUST_0_ONLY",
+    "lean_compilation": "PASS_FINITE_DECLARATIONS_ONLY",
+    "novelty": "NOT_ASSESSED",
+    "numerical_sampling": "NOT_USED",
+    "published_finite_zero_input": "Platt arXiv:1305.3087v1 Theorem7.1 at q=3; published computer-assisted input, not fresh replay",
+    "transitive_axiom_audit": "PASS_PRINTED_FINITE_DECLARATIONS_STANDARD_AXIOMS_ONLY",
+    "universal_analytic_argument": "WRITTEN_ANALYTIC_PROOF; authored and self-reviewed; independent review NOT_RUN",
+    "universal_analytic_formalization": "NOT_CLAIMED"
+  },
+  "family": "Conditional.DirichletGRH: all complex Dirichlet characters of all positive moduli; every zero in the open critical strip",
+  "first_open_implication": "for EVERY edge v in the full form domain, m11[v] >= <Bv,A0^(-1)Bv>, with actual physical core A0 and all native signed couplings",
+  "heat_interfaces": {
+    "coverage": "pi_n=2^(-n-1), complete tail=2^(-J); Kx=(x+(sum x)pi)/2 with exact inverse",
+    "physical_local": "actual exp(-t L), norm<=exp(-t/10); inverse integral tail<=10 exp(-T/10)",
+    "scope": "neither coverage nor local heat proves the unproved full edge arithmetic sign"
+  },
+  "lean_declarations": [
+    "ConductorThreeSharpEdgeLocal.filter_support_exact",
+    "ConductorThreeSharpEdgeLocal.filtered_width_slack",
+    "ConductorThreeSharpEdgeLocal.complex_strip_prefactor",
+    "ConductorThreeSharpEdgeLocal.near_unknown_budget",
+    "ConductorThreeSharpEdgeLocal.low_zero_tail_budget",
+    "ConductorThreeSharpEdgeLocal.local_loss_guard",
+    "ConductorThreeSharpEdgeLocal.shifted_local_margin",
+    "ConductorThreeSharpEdgeLocal.binet_correction_guard",
+    "ConductorThreeSharpEdgeLocal.conductor_log_guard",
+    "ConductorThreeSharpEdgeLocal.local_high_sign_guard",
+    "ConductorThreeSharpEdgeLocal.edge_inventory_retained",
+    "ConductorThreeSharpEdgeLocal.finiteProofData_roundtrip"
+  ],
+  "local_carrier": {
+    "domain": "every physical L2 class with finite original parity-one Gamma",
+    "fourier": "positive angular transform; dxi/(2*pi)",
+    "gamma_kernel": "exp(-3r/2)/(1-exp(-2r)), r>0",
+    "hypotheses": [
+      "actual primitive nonprincipal chi3=(0,1,-1), conductor3, gamma parity1",
+      "no H1 ratio, parity condition or finite-frequency restriction on local inputs"
+    ],
+    "interval_length": "1",
+    "norm": "physical Lebesgue L2(dt)",
+    "scalar": "Complex",
+    "space": "physical L2(I,dt), zero extended to the whole real line",
+    "zeta_correction": "absent because this actual sector is primitive nonprincipal; zeta is not claimed covered"
+  },
+  "lossless_interfaces": {
+    "dependent_syntax": "existing WeightedStage dependent-proof syntax; contexts, source identities, signs, approximation/error laws and evidence retained",
+    "finite_instance": "Encodable packet stores source/physical-normalization/role/open-consumer tokens and exact natural/rational payload together; decode(encode x)=some x",
+    "semantic_scope": "arbitrary L2 functions and zero ordinates are not asserted finite-encodable; their infinite-domain laws remain analytical"
+  },
+  "not_claimed": [
+    "full radius-four original stage",
+    "all higher chi3 stages",
+    "other remaining primitive sectors",
+    "pole-inclusive zeta stages",
+    "RH",
+    "Conditional.DirichletGRH"
+  ],
+  "original_target": "DirichletStageChain.PrimitiveStageLower modThreeQuadratic modThreeQuadratic_primitive modThreeQuadratic_nonprincipal 3",
+  "parameters": {
+    "K": 1425,
+    "M": 19000,
+    "complex_strip_prefactor": "1003/1000",
+    "epsilon": "1/10^40",
+    "h": "153/2000000000",
+    "local_loss": "6/10^40+1/10^66",
+    "low_allowance": "1/10^66",
+    "native_atoms": 458,
+    "new_mixed_reflections": 110,
+    "new_pure_edge_atoms": 255,
+    "new_reflected_edge_atoms": 365
+  },
+  "primary_sources": [
+    {
+      "citation": "D. Fiorilli and S. J. Miller, Surpassing the ratios conjecture in the 1-level density of Dirichlet L-functions, Algebra Number Theory 9 (2015), 13\u201352; proof of Proposition3.1 individual formula in section3",
+      "url": "https://msp.org/ant/2015/9-1/ant-v9-n1-p02-p.pdf"
+    },
+    {
+      "citation": "D. Platt, arXiv:1305.3087v1, Theorem7.1",
+      "url": "https://arxiv.org/abs/1305.3087v1"
+    },
+    {
+      "citation": "M. A. Bennett, G. Martin, K. O'Bryant and A. Rechnitzer, arXiv:2005.02989v1, Theorem1.1",
+      "url": "https://arxiv.org/abs/2005.02989v1"
+    },
+    {
+      "citation": "NIST DLMF 5.9.15\u201316",
+      "url": "https://dlmf.nist.gov/5.9"
+    }
+  ],
+  "proved_written_leaves": [
+    "q0[w] >= -(6/10^40+1/10^66) E > -10^-39 E, every supported width-one finite-Gamma complex physical input",
+    "L=q0+E/8 >= E/10 on the entire local form domain",
+    "nonodd compact individual explicit formula derived from the real even autocorrelation before use; complexification only after the real proof",
+    "all unknown zeros with both signs and multiplicities controlled by an exhaustive near window and all dyadic far annuli",
+    "entire complementary real-frequency integral controlled; no finite cutoff remains unpaid",
+    "actual closed physical selfadjoint L and spectral heat exp(-t L), norm <= exp(-t/10), with exact arithmetic generator return",
+    "actual reflected H_gamma=sum |exp(-a_j x)><exp(-a_j x)| positive trace class on L2(3,4), all-rank tail <= exp(-6 a_J)/(2 a_J*(1-exp(-12)))",
+    "exact original m11=L+H_gamma+ALL365 signed reflected native prime terms; all B couplings retained"
+  ],
+  "schema": "grwtsk.math.static-mathematical-verification-target.v1",
+  "source": {
+    "canonical_noe_revision": "7376f433ae7573f7c02d47facb799337de6e0215",
+    "inspected_before_writing": "445401c9714cafb94ff619d71be0195f017ac4bc",
+    "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeSharpEdgeLocal.lean",
+    "requested_baseline": "12e3471d075669ca7ff09c41b8df7e5ab64f18fc",
+    "sha256": "26ef7c1cd22ead3b675c6eec4f6674ca21c1d2b16860df6e56b517ab043867cd"
+  },
+  "source_header_NOT_RUN": "Drafting-time status; this exact-source audit covers only finite formal declarations.",
+  "target_id": "chi3-sharp-edge-local-20261107"
+}
