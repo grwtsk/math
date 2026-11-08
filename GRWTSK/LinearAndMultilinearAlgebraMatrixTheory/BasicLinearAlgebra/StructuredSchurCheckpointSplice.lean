@@ -1,31 +1,37 @@
 /-
 Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
-Authors: grwtsk contributors
+Authors: grwtsk contributors.
+
+Repair base: grwtsk/math@aaa9172c9e5c6630a50fed3301a3eb2c2b07677a.
+Canonical workflow source: grwtsk/noeaaeue@
+b8136c36f7e0466381ad5ca2f4ad32c98bae9af1.
+Conditional finite checkpoint-splice adapter; formal assurance is tracked in
+grwtsk/noeaaeue docs/verification.md with exact source and replay receipts.
+Independent analytical review and novelty assessment remain pending.
 -/
-import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.StructuredSchurCompactReplay
+import GRWTSK.LinearAndMultilinearAlgebraMatrixTheory.BasicLinearAlgebra.StructuredSchurGeometricCheckpoint
 
 /-!
-# Exact checkpoint splicing for structured Schur replay
+# Explicit-link compatibility for structured Schur checkpoint splicing
 
-A checked prefix and a checked following block compose only after the surviving
-rows at their common boundary are identified.  `Tape.blockCaps_add` already
-returns the combined pivot checks.  This module adds the matching endpoint
-return: replay is pointwise in each checkpoint row, so the second endpoint can
-be transported through the same exact boundary comparison.
+`StructuredSchurGeometricCheckpoint` already proves
+`Tape.blockCaps_checkpoint_add`: adjacent checked blocks and their exact survivor
+endpoints compose through their common checkpoint.
 
-The theorem does not infer the boundary comparison from equal dimensions,
-archive labels, or hashes.  It consumes equality of every surviving row and
-retains all pivot caps in both blocks.  It is an exact finite recurrence result;
-source identification, literal seed comparisons, arithmetic signs, and analytic
-high-complement estimates remain separate obligations.
+An earlier additive source accidentally redeclared that theorem name in the same
+namespace.  This file removes the declaration collision and retains uniquely
+named splice and explicit-link entry points for callers that keep the boundary
+equality, first block, and second block as separate arguments.
 
-Primary proof: use `Tape.rowAt_add` to split the replay, transport one surviving
-row through the second block by induction on its length, and then apply the
-supplied second endpoint.  A hostile boundary is immediate: changing one
-surviving checkpoint row can change every later rounded row, so an endpoint
-cannot be spliced from block lengths alone.  Independent mathematical review
-and novelty assessment are not claimed.
+The wrapper consumes the exact row-by-row boundary equality.  It does not infer
+checkpoint identity from dimensions, offsets, labels, hashes, or archive names.
+Changing one surviving checkpoint row may change that row’s later rounded states.
+
+This is exact finite recurrence transport.  Literal source identification,
+arithmetic signs, high-complement estimates, cofinal families, RH, and
+Dirichlet GRH remain separate obligations.  The wrapper is not an independent
+proof of the imported composition theorem.
 -/
 
 set_option autoImplicit false
@@ -46,6 +52,27 @@ theorem Tape.rowAt_congr_at (tape : Tape r N) (start : ℕ)
   | zero => exact h
   | succ k ih => simp only [Tape.rowAt, ih]
 
+/-- Compatibility wrapper around the existing checkpoint composition theorem.
+
+The exact common checkpoint remains explicit as `hLink`; no row is synthesized
+or assigned a default value. -/
+theorem Tape.blockCaps_checkpoint_add_explicitLink (tape : Tape r N) (start : ℕ)
+    (checkpoint : Fin N → GridRow r) (k m : ℕ)
+    (h : start + (k + m) ≤ N) (checkpoint' next : Fin N → GridRow r)
+    (hLink : ∀ i : Fin N, start + k ≤ i.val →
+      tape.rowAt start checkpoint k i = checkpoint' i)
+    (first : tape.BlockCaps start checkpoint k (by omega))
+    (second : tape.BlockCaps (start + k) checkpoint' m (by omega) ∧
+      ∀ i : Fin N, start + k + m ≤ i.val →
+        tape.rowAt (start + k) checkpoint' m i = next i) :
+    tape.BlockCaps start checkpoint (k + m) h ∧
+      ∀ i : Fin N, start + (k + m) ≤ i.val →
+        tape.rowAt start checkpoint (k + m) i = next i :=
+  tape.blockCaps_checkpoint_add start checkpoint checkpoint' next k m h
+    ⟨first, hLink⟩ second
+
+/- The two composition interfaces share the same exact boundary premises and
+underlying finite row recursion; they are not independent analytic proofs. -/
 /-- Adjacent checked blocks and the second block's survivor endpoint compose
 through the exact common checkpoint.  Rows eliminated before the boundary do
 not enter the endpoint comparison. -/

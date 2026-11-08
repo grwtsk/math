@@ -1,11 +1,11 @@
 /-
 Copyright (c) 2026 grwtsk contributors.
 Released under the MIT license as described in the repository LICENSE.
-Authors: grwtsk contributors
+Authors: grwtsk contributors.
 
-Source base: grwtsk/math@c779a67fa824da8f9b75384f7d61c46baeb2ce1f.
+Source base: grwtsk/math@aaa9172c9e5c6630a50fed3301a3eb2c2b07677a.
 Canonical workflow source: grwtsk/noeaaeue@
-e790dbb75fab307c1c6c94db26ee44ceddf8a7cf.
+b8136c36f7e0466381ad5ca2f4ad32c98bae9af1.
 Conditional finite checkpoint-splice adapter; formal assurance is tracked in
 grwtsk/noeaaeue docs/verification.md with exact source and replay receipts.
 Independent analytical review and novelty assessment remain pending.
@@ -26,9 +26,16 @@ a prefix advances through both checked pivots without changing carriers.
 The common object is the original archived checkpoint, not merely a local array
 with the same length.  `checkpoint_active_original` identifies all 1600 active
 rows with `RadiusTwoNextPredecessorData.initial`; the analogous endpoint theorem
-returns every survivor to `PackedFullTwoSource.expectedGrid`.  The generic
-checkpoint-splice theorem then composes the prefix, the two checked pivots, and
-any separately checked continuation.
+returns every survivor to `PackedFullTwoSource.expectedGrid`.  The imported
+checkpoint theorem then composes the prefix, the two checked pivots, and any
+separately checked continuation.
+
+The specialized full-length consumer below shows exactly what remains for the
+finite recurrence: a checked prefix through offset 398336 with the stated
+checkpoint return, and a checked 1598-pivot suffix from `nextCheckpoint`.
+Together with the already checked middle block they cover all 399936 pivots and
+retain the same complete price bound.  Neither missing block is constructed
+here.
 
 This is an exact finite recurrence improvement.  It does not construct the
 398336-pivot prefix, the remaining 1598 pivots, the literal seed/source
@@ -105,7 +112,7 @@ theorem checkedPrefixAndTwoPivot
     paidTape.BlockCaps 0 seed 398338 (by decide) ∧
       ∀ i : Fin 399936, 398338 ≤ i.val →
         paidTape.rowAt 0 seed 398338 i = nextCheckpoint i :=
-  paidTape.blockCaps_checkpoint_splice 0 seed 398336 2 (by decide)
+  paidTape.blockCaps_checkpoint_add_explicitLink 0 seed 398336 2 (by decide)
     checkpoint nextCheckpoint (prefixEndpoint_to_checkpoint seed hEndpoint)
     hPrefix checkedBlock
 
@@ -142,6 +149,38 @@ theorem checkedPrefixTwoPivotAndSuffix
   have h := checkedPrefixAndTwoPivot seed hPrefix hEndpoint
   exact paidTape.blockCaps_add 0 seed 398338 m (by omega)
     nextCheckpoint h.2 h.1 hSuffix
+
+/-- Exact full finite recurrence consumer.
+
+A checked 398336-pivot prefix with the original archived endpoint and a checked
+1598-pivot suffix from the transported endpoint cover all 399936 pivots. -/
+theorem checkedFullRecurrence
+    (seed : Fin 399936 → GridRow 2)
+    (hPrefix : paidTape.BlockCaps 0 seed 398336 (by decide))
+    (hEndpoint : ∀ i : Fin 1600,
+      paidTape.rowAt 0 seed 398336 (activeIndex i) =
+        RadiusTwoNextPredecessorData.initial i)
+    (hSuffix : paidTape.BlockCaps 398338 nextCheckpoint 1598 (by decide)) :
+    paidTape.BlockCaps 0 seed 399936 (by decide) := by
+  simpa only [show 398338 + 1598 = 399936 by norm_num] using
+    (checkedPrefixTwoPivotAndSuffix seed hPrefix hEndpoint
+      1598 (by decide) hSuffix)
+
+/-- The complete recurrence and the canonical price use exactly the same tape.
+
+This remains a conditional finite result: the prefix, suffix, literal source
+comparison, and final paid sign are not supplied here. -/
+theorem checkedFullRecurrenceAndPrice
+    (seed : Fin 399936 → GridRow 2)
+    (hPrefix : paidTape.BlockCaps 0 seed 398336 (by decide))
+    (hEndpoint : ∀ i : Fin 1600,
+      paidTape.rowAt 0 seed 398336 (activeIndex i) =
+        RadiusTwoNextPredecessorData.initial i)
+    (hSuffix : paidTape.BlockCaps 398338 nextCheckpoint 1598 (by decide)) :
+    paidTape.BlockCaps 0 seed 399936 (by decide) ∧
+      (∑ i, price (paidTape.caps i)) ≤ (39 / 1000 : ℝ) :=
+  ⟨checkedFullRecurrence seed hPrefix hEndpoint hSuffix,
+    checkedBlockAndPrice.2⟩
 
 /-- The splice and the already proved complete canonical price refer to the same
 tape.  The price bound does not establish the missing prefix or source sign. -/
