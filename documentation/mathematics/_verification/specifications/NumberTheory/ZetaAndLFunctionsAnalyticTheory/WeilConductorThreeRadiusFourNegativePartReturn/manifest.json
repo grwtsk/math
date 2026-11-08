@@ -1,0 +1,62 @@
+{
+  "Noe_checker": "tools/chi3_radius_four_negative_part/check.py",
+  "branch": "radiusFour.filteredMiddle.entireResidual.tailSchur.finiteGram.remainingSchur",
+  "canonical_noe_skill_revision": "cd80db6f3c54bba5904bd01bc3cde665e0cfe64a",
+  "checker_sha256": "6a743d549797e4256980b16d063342b30ec784a761033fb1c434c00c2a43fef2",
+  "claim": "For EVERY original z in physical Z_F, K_Z[z]>=bE(z)-<Gminus^-1 N_Zz,N_Zz>. For EVERY m>=0 the entire omitted positive inverse-expansion tail is bounded by741rho^(m+1)/(1-rho)E(z); m64 gives <1e-56 E(z).",
+  "coding": "Reuse PaidPacket full dependent roundtrip and WeightedStage exhaustive dyadic indexing/entire2^-J tail/source-return. Finite JSON complete semantic and byte readback PASS, full huge tail rational retained. Finite operator descriptions neither compute entries nor erase infinite frequency or iteration tails.",
+  "comparison": {
+    "novelty": "NOT_ASSESSED",
+    "primary_source": "Friedrich, Guenther, Klotz, arXiv:1708.01545v1 (2017), https://arxiv.org/abs/1708.01545; general Schur comparison only, no chi3 sign theorem imported. All bounded identities derived directly in source.",
+    "review": "One written derivation plus exact scalar and hostile fixture checks; no independent proof claimed."
+  },
+  "construction": "M is actual source M_w including true P23 correction, not raw s4. N=M_-^(1/2)K_w|F; J=N_U N_U*/b, Gminus=I-J on ALL original frequency Y; Aminus=bI-N_U*N_U on ALL physical Uold. rho=741/(49900b)<3/25. Auxiliary comparison inverses do not replace original D_U inverse. Evaluate source inequality at true original minimizer, retain nonnegative auxiliary square, then use positive spectral geometric series.",
+  "consumed_math_revision": "fdee2d433398325fa10209dcdd5c8273272a583a",
+  "dependencies": {
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourNegativePartReturn.lean": "446e53506c342d6ed0852f7c93d45da000b9f2bf08307abf32900cb664d900f9",
+    "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourWeightedSchurSource.lean": "e32dcfdccf9b80b930483b8a79a28f8f1f728a8a1cdf5361ba115ee8f310d198"
+  },
+  "dependency_path": "actual weighted source -> negative-part full-input comparison -> proved entire auxiliary mixed-iteration tail -> stillOPEN actual retained negative-part bound -> allK_Z sign -> finiteGram -> originalS -> residual allowance -> originalchi3 j3 -> one cofinal coordinate",
+  "discharged_obligations": "Only new local all-input lower-comparison and full inverse-iteration-tail obligations; no original sign/stage obligation discharged",
+  "evidence": {
+    "Lean_compilation": "NOT_RUN",
+    "Noe_jobs": "NONE",
+    "complete_data_roundtrip_readback": "PASS",
+    "finite_scalar_source_guards": "PASS",
+    "fresh_kernel": "NOT_RUN",
+    "independent_analytic_review": "NOT_RUN",
+    "independent_human_review": "NOT_RUN",
+    "numerical_eigenvalues": "NOT_COMPUTED",
+    "transitive_axiom_audit": "NOT_RUN",
+    "universal_operator_argument": "COMPLETE_WRITTEN_PROOF_USING_NATIVE_WRITTEN_PREMISES"
+  },
+  "heat": "Bounded actual positive spectral parts and auxiliary Aminus/Gminus have heat semigroup/operator-norm return on their entire stated domains. Positive gaps only for auxiliary inverses; full time-tail bounds retained. No heat intertwining or arithmetic sign assumed.",
+  "hostile_fixture": "Exact separate Euclidean R2 fixture matches coarse norm/head premises but has actual Schur b-1/6<0; establishes insufficiency of norm-only reasoning. NOT actual chi3 source, not its K_Z counterexample.",
+  "local_attribution": "grwtsk contributors",
+  "next_exact_missing_lemma": "Control actual <Gminus^-1 N_Zz,N_Zz> sufficiently relative to bE(z) on ALL original Z_F, or supply another signed physical bound. This inequality is outstanding, not an assumption proving the target.",
+  "original_targets": {
+    "GRH_family": "ALL complex Dirichlet characters modulo every positive integer, including principal/imprimitive; every zero0<Re(s)<1 hasRe(s)=1/2. OPEN.",
+    "KZ": "OPEN on ALL original Z_F",
+    "RH": "OPEN",
+    "cofinal": "RH AND PrimitiveNegativeWitness AND ALL SmallConductorStages for every primitive nonprincipal character; no coordinate closed here",
+    "j3": "OPEN: ALL original radius-four real odd compactC2 Admissible chi3 4 tests,Q4>=-E/8"
+  },
+  "retained_65_source_terms": "NOT_EVALUATED; their actual bound remains required; no epsilon allocation silently consumed",
+  "schema": "grwtsk.math.static-verification-target/1",
+  "sources": [
+    {
+      "bytes": 9694,
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourNegativePartReturn.lean",
+      "sha256": "446e53506c342d6ed0852f7c93d45da000b9f2bf08307abf32900cb664d900f9"
+    }
+  ],
+  "static_mathematical_data": [
+    {
+      "bytes": 8749,
+      "path": "documentation/mathematics/_verification/specifications/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourNegativePartReturn/data/scalars.json",
+      "sha256": "c40e6a290de67ee22839c030d88f841374bb2917003a780e16a5c8bbbc929f38"
+    }
+  ],
+  "status": "WRITTEN_ALL_INPUT_NEGATIVE_PART_LOWER_COMPARISON_AND_FULL_ITERATION_TAIL; ORIGINAL_SIGN_OPEN",
+  "types": "ALL carriers, physical Gram, domains, quantifiers, character458 atoms, Fourier normalization, actual filters/mask and block parameters explicitly retained in source; inherited source definitions reused. Gminus on frequency Y is distinct from actual physical Gram G."
+}
