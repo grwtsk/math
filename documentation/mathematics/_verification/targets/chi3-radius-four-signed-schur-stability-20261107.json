@@ -1,0 +1,93 @@
+{
+  "schema": "GRWTSK.Chi3RadiusFourSignedSchurStability/1",
+  "attribution": "grwtsk contributors",
+  "original_target": "DirichletStageChain.PrimitiveStageLower modThreeQuadratic modThreeQuadratic_primitive modThreeQuadratic_nonprincipal 3",
+  "family": "genuine primitive nonprincipal real chi3, q=3, gamma parity one; all 458 unramified p^e<=2980, actual physical dt norm",
+  "test_carrier": "every original real odd compact C2 Admissible chi3 4 f",
+  "read_source_revision": "562d19601f702335d4400d15e44851dd5d228f0e",
+  "source_files": [
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourHighFilter.lean",
+      "blob": "2fa80f8044e99aff806dd50bf0d7fdcfa7a9aeab",
+      "claim": "Complete 4096-row weighted signed prime Schur max bound, written analytical source; row checker historical external evidence"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourSixteenShells.lean",
+      "blob": "8c0400a5286e147fbaa881c48299433c72a32f28",
+      "claim": "Every original 458 prime correlation of the physical odd shell core g vanishes"
+    },
+    {
+      "path": "GRWTSK/NumberTheory/ZetaAndLFunctionsAnalyticTheory/WeilConductorThreeRadiusFourPrimeFreeStability.lean",
+      "blob": "993e8eb08b0e4e517e24544dfadd06c25dac227d",
+      "claim": "Original source two-mass leak profile, now quantitatively sharpened"
+    }
+  ],
+  "row_witness": {
+    "row_count": 4096,
+    "original_atoms": 458,
+    "physical_support_radius": "4",
+    "schur_covered_radius": "400001/100000",
+    "row_max_rational": "18053610188579/312600000000",
+    "row_bound": "58",
+    "interpretation": "The source's absolute-weight Schur argument bounds the real/complex selfadjoint prime operator T4 with |<u,T4u>|<=58||u||^2; bilinear |<u,T4v>|<=58||u||||v||",
+    "provenance": "Earlier exact finite witness in grwtsk/noeaaeue, not freshly replayed here"
+  },
+  "support_source": {
+    "shells": 16,
+    "width": "1/1048576",
+    "perturbations": "delta_j in [0,1/1000000]",
+    "g": "1_{S_delta} f",
+    "h": "1_{S_delta^c} f",
+    "full_original_prime_cancel": "<g,T4g>=0 for every source prime power shift"
+  },
+  "gamma_source": {
+    "interval": "[1/1048576,1/16-1/1048576-1/1000000]",
+    "coefficient_K0": "290947153/28311552",
+    "identity": "||tau_r f-f||^2=2(||g||^2+||h||^2)-2 Re C_f(r)",
+    "correlation_debt": "|C_f(r)-C_g(r)|<=2||g||||h||+||h||^2",
+    "pointwise_lower": "||tau_r f-f||^2 >=2 max(0,||g||^2-2||g||||h||)",
+    "return": "Gamma1(f)>=K0*max(0,G^2-2GH); no Gamma(g) or Gamma(h) domain assumed"
+  },
+  "full_lower_profile": "Q_chi3,4(f)>=K0 max(0,G^2-2GH)-(6/5)(G^2+H^2)-58(2GH+H^2)",
+  "ratios": [
+    {
+      "outside_over_inside": "1/16",
+      "claimed_weil_floor": "1/16",
+      "strict_margin_in_G2": "280908563/1132462080"
+    },
+    {
+      "outside_over_inside": "1/17",
+      "claimed_weil_floor": "1/2",
+      "strict_margin_in_G2": "920492773/2727346176"
+    },
+    {
+      "outside_over_inside": "1/19",
+      "claimed_weil_floor": "3/2",
+      "strict_margin_in_G2": "11317444351/51102351360"
+    },
+    {
+      "outside_over_inside": "1/20",
+      "claimed_weil_floor": "2",
+      "strict_margin_in_G2": "75466729/786432000"
+    },
+    {
+      "outside_over_inside": "1/23",
+      "claimed_weil_floor": "3",
+      "strict_margin_in_G2": "109556465/4992270336"
+    }
+  ],
+  "independent_replay": {
+    "exact_ratios": "Python Fraction and independent V8 BigInt rational arithmetic",
+    "row_max_below_58": "integer cross multiplication",
+    "complete_4096_row_replay_this_turn": "NOT_RUN",
+    "original_gamma_formula": "WRITTEN_ANALYTICAL"
+  },
+  "verification": {
+    "source_publication": "PENDING",
+    "Lean_elaboration": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "independent_human_review": "NOT_RUN"
+  },
+  "remaining": "Full signed core/edge Schur sign m11[v]>=<Bv,A0^-1 Bv> for every original radius-four finite-gamma edge vector v. Neither original PrimitiveStageLower j=3, RH nor Dirichlet GRH established."
+}
