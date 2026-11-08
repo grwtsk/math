@@ -41,8 +41,8 @@ grwtsk contributors confirm ownership of the supplied formal proof sources and
 direct this work through ChatGPT and Codex. The existing Math repository MIT
 terms apply; original assistance credit, upstream mathematical authorship and
 Mathlib Apache-2.0 terms remain retained.
-See LICENSES/ArchiveCandidates-NOTICE.txt and evidence/source-intake.json for
-exact source identities and attribution scope. Intake is not native proof
+See evidence/source-intake.json for exact source identities and attribution
+scope. Intake is not native proof
 acceptance or public-release permission.
 
 Finite square-sum and Hermitian trace-rank interfaces

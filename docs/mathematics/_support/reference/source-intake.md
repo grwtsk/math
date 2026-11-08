@@ -108,7 +108,7 @@ The delivered production reports agree byte-for-byte and record finite scope thr
 
 ## Evidence and limits
 
-Exact source identities and intake statuses (artifact:gitblob:5768dd6443326f9137958546065006ddbe451d7b) · [Attribution and licensing](../../../../LICENSES/ArchiveCandidates-NOTICE.txt) · Mathematical source standard (artifact:gitblob:18548a1c7e77002331dd18e929aa89fadf8af9c3) · Verification requirements (artifact:gitblob:d7df3a864028a221ea3728082afc25ec28c72953).
+Exact source identities and intake statuses (artifact:gitblob:5768dd6443326f9137958546065006ddbe451d7b) · [Attribution and licensing](../../../../NOTICE) · Mathematical source standard (artifact:gitblob:18548a1c7e77002331dd18e929aa89fadf8af9c3) · Verification requirements (artifact:gitblob:d7df3a864028a221ea3728082afc25ec28c72953).
 
 grwtsk contributors confirms ownership of the supplied proof sources. The existing repository MIT terms apply. Human direction, formal-source contribution, assistance, ownership and mathematical origin remain distinct; original source credit, upstream mathematics and Mathlib licenses are retained.
 
