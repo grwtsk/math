@@ -296,9 +296,8 @@ theorem spinReadout_eq_of_source_trace_eq
     (sameTrace : Path.trace (history p) = Path.trace (history q))
     (n : Nat) :
     spinReadout history observe n p = spinReadout history observe n q := by
-  have heq : history p = history q :=
-    Path.eq_of_trace_eq (history p) (history q) sameTrace
-  simp [spinReadout, heq]
+  exact spinReadout_eq_of_history_eq history observe p q
+    (Path.eq_of_trace_eq (history p) (history q) sameTrace) n
 
 /-- No finite stage can correctly classify different intended source types
 if their exact tagged histories are identical. Spin expansion alone
@@ -317,21 +316,10 @@ theorem no_finite_classifier_of_identical_source_trace
       ∀ r : P,
         classify (observationPrefix (spinReadout history observe) N r) =
           some (typeOf r) := by
-  rintro ⟨N, classify, hcorrect⟩
-  have hpref :
-      observationPrefix (spinReadout history observe) N p =
-        observationPrefix (spinReadout history observe) N q := by
-    funext i
-    exact spinReadout_eq_of_source_trace_eq history observe p q sameTrace i.val
-  have htype : some (typeOf p) = some (typeOf q) := by
-    calc
-      some (typeOf p) =
-          classify (observationPrefix (spinReadout history observe) N p) :=
-            (hcorrect p).symm
-      _ = classify (observationPrefix (spinReadout history observe) N q) :=
-            congrArg classify hpref
-      _ = some (typeOf q) := hcorrect q
-  exact differentType (Option.some.inj htype)
+  exact no_finite_spin_classifier_of_same_history
+    history typeOf observe p q
+    (Path.eq_of_trace_eq (history p) (history q) sameTrace)
+    differentType
 
 end ClassificationObstruction
 
