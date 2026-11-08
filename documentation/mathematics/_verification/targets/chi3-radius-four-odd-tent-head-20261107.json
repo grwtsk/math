@@ -1,0 +1,194 @@
+{
+  "schema": "GRWTSK.Chi3OddTentHead/1",
+  "attribution": "grwtsk contributors",
+  "source": "grwtsk/math actual primitive chi3 radius-four signed prime correlations",
+  "character_modulus": 3,
+  "parity": 1,
+  "full_source_prime_powers": 458,
+  "new_unramified_prime_powers": 365,
+  "old_cutoff": 403,
+  "new_cutoff": 2980,
+  "positive_half_line_interval": [
+    2,
+    4
+  ],
+  "step_count": 16,
+  "step_width": [
+    1,
+    8
+  ],
+  "physical_even_odd_extension": "f(t)=u(t)-u(-t)",
+  "original_prime_quadratic": "Delta_new(f)=-2 sum_{n>403} (Lambda(n)/sqrt(n)) chi3(n) C_f(log n)",
+  "matrix_formula": "A[i,j]=2 sum_{n>403} (Lambda(n)/sqrt(n)) chi3(n) max(0,1-8*abs(log(n)-(4+(i+j+1)/8)))",
+  "hankel_entry_denominator": "1000000000",
+  "hankel_bounds": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      445476118,
+      445476119
+    ],
+    [
+      -709891561,
+      -709891560
+    ],
+    [
+      -367185211,
+      -367185210
+    ],
+    [
+      41120664,
+      41120665
+    ],
+    [
+      -109213839,
+      -109213838
+    ],
+    [
+      966329605,
+      966329606
+    ],
+    [
+      -240148211,
+      -240148210
+    ],
+    [
+      -465194447,
+      -465194446
+    ],
+    [
+      513856694,
+      513856695
+    ],
+    [
+      -535683676,
+      -535683674
+    ],
+    [
+      -436331981,
+      -436331979
+    ],
+    [
+      287411310,
+      287411312
+    ],
+    [
+      1185374060,
+      1185374061
+    ],
+    [
+      -483720183,
+      -483720182
+    ],
+    [
+      -263789940,
+      -263789938
+    ],
+    [
+      -453296212,
+      -453296210
+    ]
+  ],
+  "midpoint_matrix_denominator": "2000000000",
+  "shift_for_integer_pivots": "2749/1000",
+  "shifted_integer_matrix_formula": "M[i,j]=lower[i+j]+upper[i+j]+(i==j?5498000000:0)",
+  "bareiss_pivots": [
+    "5498000000",
+    "30228004000000000000",
+    "166193565992000000000000000000",
+    "913732225824016000000000000000000000000",
+    "5023699777580439968000000000000000000000000000000",
+    "27620301377137258944064000000000000000000000000000000000000",
+    "151856416971500649674463872000000000000000000000000000000000000000000",
+    "834906580509310571910202368256000000000000000000000000000000000000000000000000",
+    "3284387109569414275664445906398328543742517632000000000000000000000000000000000000000000",
+    "16436962629640250311515008222534191592443582163340042765539904000000000000000000000000000000000000",
+    "111880270173201287593457706996685067482969733184412143914608717154610638721888000000000000000000000000000000",
+    "345816558188014139830683901112868030817742948812399688609571396638812396866302917663162699536000000000000000000000000",
+    "745401180514606869355229670902791027390300508378340390152033804435733856032256409892524902525601997135760792000000000000000000",
+    "3087302729625096816668547633262552343097207616083963643155897474808611118378940430289221799186201655968849436208574002461924000000000000",
+    "1178163400494297625594934250426726378381359408862784631642024487948013360815001736530851334480858563719608682527206644035457261680946445078000000",
+    "633118515197004798224641842713210734308459456287384258949023333594125214798773506377490965645195372111428396998382004716087692947525339634927337314027841"
+  ],
+  "computation": {
+    "method": "exact 16x16 fraction-free Bareiss without row pivots",
+    "pivots_all_positive": true,
+    "divisions_all_exact": true,
+    "pivot_count": 16
+  },
+  "absolute_matrix_midpoint_error_bound": "16/1000000000",
+  "shift_gap": "1/1000",
+  "result": "A + 11/4 I is strictly positive definite on the complete 16-cell positive-half odd-step subspace; not the all-domain Weil stage",
+  "evidence": {
+    "finite_interval_log_weight": "exact rational atanh/sqrt outward enclosures separately computed",
+    "matrix_bigint_replay": "executed",
+    "analytic_full_source_return": "written",
+    "lean_compilation": "NOT_RUN",
+    "fresh_kernel": "NOT_RUN",
+    "transitive_axiom_audit": "NOT_RUN",
+    "independent_human_review": "NOT_RUN"
+  },
+  "limitations": [
+    "Only the NEW prime part; original gamma, prior prime atoms and mixed infinite physical complement not included",
+    "Piecewise-constant step vectors are L2 observations, not original C2 admissible tests",
+    "The SPD assertion does not prove the universal radius-four Weil lower bound"
+  ]
+}
