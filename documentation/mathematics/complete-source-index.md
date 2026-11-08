@@ -1,55 +1,51 @@
-# MSC2020 mathematical documentation
+# MSC2020 mathematical source navigation
 
 [Documentation](../index.md) · [MSC2020](../taxonomy/msc2020/README.md)
 
-Browse the current MSC2020 folders below. Source articles preserve their original commit/blob pins, declarations, literal source windows and verification scope. These are navigation assignments; source-specific semantic review and mathematical acceptance are not inferred.
+Browse the maintained Lean source folders below, arranged by MSC2020 subject. These links open the source tree directly. Historical source pins and verification records retain their original scopes; folder placement does not establish mathematical acceptance.
 
-**73,641 document entries in this branch.** Historical source editions remain separate where their provenance or declaration observations differ.
+Only subjects with an existing source folder are listed. The auxiliary documentation link below retains provider source context.
 
-| Document or subject | Kind |
+| Source subject or documentation | Kind |
 |---|---|
-| [\(K\)-theory](KTheory/complete-source-index.md) | MSC subject |
-| [Algebraic geometry](AlgebraicGeometry/complete-source-index.md) | MSC subject |
-| [Algebraic topology](AlgebraicTopology/complete-source-index.md) | MSC subject |
-| [Associative rings and algebras](AssociativeRingsAndAlgebras/complete-source-index.md) | MSC subject |
-| [Category theory; homological algebra](CategoryTheoryHomologicalAlgebra/complete-source-index.md) | MSC subject |
-| [Combinatorics](Combinatorics/complete-source-index.md) | MSC subject |
-| [Commutative algebra](CommutativeAlgebra/complete-source-index.md) | MSC subject |
-| [Computer science](ComputerScience/complete-source-index.md) | MSC subject |
-| [Convex and discrete geometry](ConvexAndDiscreteGeometry/complete-source-index.md) | MSC subject |
-| [Differential geometry](DifferentialGeometry/complete-source-index.md) | MSC subject |
-| [Dynamical systems and ergodic theory](DynamicalSystemsAndErgodicTheory/complete-source-index.md) | MSC subject |
-| [Field theory and polynomials](FieldTheoryAndPolynomials/complete-source-index.md) | MSC subject |
-| [Functional analysis](FunctionalAnalysis/complete-source-index.md) | MSC subject |
-| [Functions of a complex variable](FunctionsOfAComplexVariable/complete-source-index.md) | MSC subject |
-| [General algebraic systems](GeneralAlgebraicSystems/complete-source-index.md) | MSC subject |
-| [General and overarching topics; collections](GeneralAndOverarchingTopicsCollections/complete-source-index.md) | MSC subject |
-| [General topology](GeneralTopology/complete-source-index.md) | MSC subject |
-| [Geometry](Geometry/complete-source-index.md) | MSC subject |
-| [Group theory and generalizations](GroupTheoryAndGeneralizations/complete-source-index.md) | MSC subject |
-| [Harmonic analysis on Euclidean spaces](HarmonicAnalysisOnEuclideanSpaces/complete-source-index.md) | MSC subject |
-| [History and biography](HistoryAndBiography/complete-source-index.md) | MSC subject |
-| [Information and communication theory, circuits](InformationAndCommunicationTheoryCircuits/complete-source-index.md) | MSC subject |
-| [Integral transforms, operational calculus](IntegralTransformsOperationalCalculus/complete-source-index.md) | MSC subject |
-| [Linear and multilinear algebra; matrix theory](LinearAndMultilinearAlgebraMatrixTheory/complete-source-index.md) | MSC subject |
-| [Manifolds and cell complexes](ManifoldsAndCellComplexes/complete-source-index.md) | MSC subject |
-| [Mathematical logic and foundations](MathematicalLogicAndFoundations/complete-source-index.md) | MSC subject |
-| [Mathematics education](MathematicsEducation/complete-source-index.md) | MSC subject |
-| [Measure and integration](MeasureAndIntegration/complete-source-index.md) | MSC subject |
-| [Mechanics of particles and systems](MechanicsOfParticlesAndSystems/complete-source-index.md) | MSC subject |
-| [Nonassociative rings and algebras](NonassociativeRingsAndAlgebras/complete-source-index.md) | MSC subject |
-| [Number theory](NumberTheory/complete-source-index.md) | MSC subject |
-| [Numerical analysis](NumericalAnalysis/complete-source-index.md) | MSC subject |
-| [Operations research, mathematical programming](OperationsResearchMathematicalProgramming/complete-source-index.md) | MSC subject |
-| [Operator theory](OperatorTheory/complete-source-index.md) | MSC subject |
-| [Order, lattices, ordered algebraic structures](OrderLatticesOrderedAlgebraicStructures/complete-source-index.md) | MSC subject |
-| [Ordinary differential equations](OrdinaryDifferentialEquations/complete-source-index.md) | MSC subject |
-| [Probability theory and stochastic processes](ProbabilityTheoryAndStochasticProcesses/complete-source-index.md) | MSC subject |
-| [Real functions](RealFunctions/complete-source-index.md) | MSC subject |
-| [Sequences, series, summability](SequencesSeriesSummability/complete-source-index.md) | MSC subject |
-| [Special functions](SpecialFunctions/complete-source-index.md) | MSC subject |
-| [Statistics](Statistics/complete-source-index.md) | MSC subject |
-| [Topological groups, Lie groups](TopologicalGroupsLieGroups/complete-source-index.md) | MSC subject |
+| [\(K\)-theory](../../GRWTSK/KTheory/) | Lean source folder |
+| [Algebraic geometry](../../GRWTSK/AlgebraicGeometry/) | Lean source folder |
+| [Algebraic topology](../../GRWTSK/AlgebraicTopology/) | Lean source folder |
+| [Associative rings and algebras](../../GRWTSK/AssociativeRingsAndAlgebras/) | Lean source folder |
+| [Category theory; homological algebra](../../GRWTSK/CategoryTheoryHomologicalAlgebra/) | Lean source folder |
+| [Combinatorics](../../GRWTSK/Combinatorics/) | Lean source folder |
+| [Commutative algebra](../../GRWTSK/CommutativeAlgebra/) | Lean source folder |
+| [Computer science](../../GRWTSK/ComputerScience/) | Lean source folder |
+| [Convex and discrete geometry](../../GRWTSK/ConvexAndDiscreteGeometry/) | Lean source folder |
+| [Differential geometry](../../GRWTSK/DifferentialGeometry/) | Lean source folder |
+| [Dynamical systems and ergodic theory](../../GRWTSK/DynamicalSystemsAndErgodicTheory/) | Lean source folder |
+| [Field theory and polynomials](../../GRWTSK/FieldTheoryAndPolynomials/) | Lean source folder |
+| [Functional analysis](../../GRWTSK/FunctionalAnalysis/) | Lean source folder |
+| [Functions of a complex variable](../../GRWTSK/FunctionsOfAComplexVariable/) | Lean source folder |
+| [General algebraic systems](../../GRWTSK/GeneralAlgebraicSystems/) | Lean source folder |
+| [General and overarching topics; collections](../../GRWTSK/GeneralAndOverarchingTopicsCollections/) | Lean source folder |
+| [General topology](../../GRWTSK/GeneralTopology/) | Lean source folder |
+| [Geometry](../../GRWTSK/Geometry/) | Lean source folder |
+| [Group theory and generalizations](../../GRWTSK/GroupTheoryAndGeneralizations/) | Lean source folder |
+| [Harmonic analysis on Euclidean spaces](../../GRWTSK/HarmonicAnalysisOnEuclideanSpaces/) | Lean source folder |
+| [Information and communication theory, circuits](../../GRWTSK/InformationAndCommunicationTheoryCircuits/) | Lean source folder |
+| [Integral transforms, operational calculus](../../GRWTSK/IntegralTransformsOperationalCalculus/) | Lean source folder |
+| [Linear and multilinear algebra; matrix theory](../../GRWTSK/LinearAndMultilinearAlgebraMatrixTheory/) | Lean source folder |
+| [Manifolds and cell complexes](../../GRWTSK/ManifoldsAndCellComplexes/) | Lean source folder |
+| [Mathematical logic and foundations](../../GRWTSK/MathematicalLogicAndFoundations/) | Lean source folder |
+| [Measure and integration](../../GRWTSK/MeasureAndIntegration/) | Lean source folder |
+| [Mechanics of particles and systems](../../GRWTSK/MechanicsOfParticlesAndSystems/) | Lean source folder |
+| [Nonassociative rings and algebras](../../GRWTSK/NonassociativeRingsAndAlgebras/) | Lean source folder |
+| [Number theory](../../GRWTSK/NumberTheory/) | Lean source folder |
+| [Numerical analysis](../../GRWTSK/NumericalAnalysis/) | Lean source folder |
+| [Operator theory](../../GRWTSK/OperatorTheory/) | Lean source folder |
+| [Order, lattices, ordered algebraic structures](../../GRWTSK/OrderLatticesOrderedAlgebraicStructures/) | Lean source folder |
+| [Ordinary differential equations](../../GRWTSK/OrdinaryDifferentialEquations/) | Lean source folder |
+| [Probability theory and stochastic processes](../../GRWTSK/ProbabilityTheoryAndStochasticProcesses/) | Lean source folder |
+| [Real functions](../../GRWTSK/RealFunctions/) | Lean source folder |
+| [Sequences, series, summability](../../GRWTSK/SequencesSeriesSummability/) | Lean source folder |
+| [Special functions](../../GRWTSK/SpecialFunctions/) | Lean source folder |
+| [Topological groups, Lie groups](../../GRWTSK/TopologicalGroupsLieGroups/) | Lean source folder |
 | [Provider adapters and exact-moment source documentation](_support/provider-documentation/complete-source-index.md) | auxiliary source documentation |
 
 Classification headings: Mathematical Reviews and zbMATH, [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). Local prose: grwtsk contributors. Folder navigation does not confer proof acceptance.

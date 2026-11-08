@@ -8,7 +8,7 @@
 
 ## MSC2020 subject navigation
 
-[Browse every source module and declaration](complete-source-index.md) · [Authored subject guides](../taxonomy/subjects/index.md) · [Naming and source provenance](../taxonomy/msc2020/README.md).
+[Browse Lean source folders by subject](complete-source-index.md) · [Authored subject guides](../taxonomy/subjects/index.md) · [Naming and source provenance](../taxonomy/msc2020/README.md).
 
 [Provider packages and source links](../adapters/README.md) retain isolated native dependencies; their Lean files link to the canonical `GRWTSK/` subject tree.
 
