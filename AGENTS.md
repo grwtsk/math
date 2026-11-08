@@ -139,6 +139,9 @@ This repository is the canonical pure mathematical source for GRWTSK.
   operational review journals, transient exports, training/model state and
   deployment artifacts belong in Noe; retain their scoped ontology references
   rather than their execution payloads here.
+- Documentation for agent intelligence, learned retrieval and discovery workflows
+  belongs in Noe. Retain the underlying mathematical statements, proofs, source
+  records and static ontology contracts here.
 - Implement machinery for effectful verification, repository mutation,
   proof-capsule assembly and explicitly requested documentation generation in
   the operations repository identified by the ontology manifest, bound to a
@@ -169,23 +172,3 @@ This repository is the canonical pure mathematical source for GRWTSK.
   receipts. Original hashes and source pins describe pre-redaction evidence,
   not edited bytes. Redaction or rewritten Git identities do not establish fresh
   replay, kernel verification or stronger mathematical acceptance.
-
-## Structural-intelligence work
-
-- Before a programme increment, read the
-  [structural-intelligence reference](documentation/mathematics/_support/reference/structural-intelligence.md)
-  and matching current-main canonical skills under
-  `grwtsk/noeaaeue/tools/automation-skills/`, discovered through `~/.agents/skills`.
-  Do not use independent or stale personal copies.
-- Use `structural-intelligence` for the shared workflow; add `typed-port-routing`,
-  `graph-sandwich-search` or `finite-diffusion` when their specific mathematical
-  objects are present.
-- Formalize a consumer-backed result first, explain its mathematical use, then
-  evaluate the guidance. Keep joint premises, alternative proof routes, source
-  mappings and evidence roles distinct. Improve skills from recorded failures in
-  actual work, not unmeasured claims.
-- Track the programme in [grwtsk/noeaaeue#406](https://github.com/grwtsk/noeaaeue/issues/406)
-  and queue taxonomy proposals in [grwtsk/math#1425](https://github.com/grwtsk/math/issues/1425).
-  The 2026-10-28 approval covers the coordinated documentation-only quiet-window
-  batch; mathematical source namespaces stay unchanged. New skill files do not
-  authorize execution, publication, root promotion or dependency migration.
