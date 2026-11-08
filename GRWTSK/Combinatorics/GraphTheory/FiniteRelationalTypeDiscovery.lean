@@ -210,4 +210,176 @@ theorem delayedNat_no_uniform_horizon :
 
 end Countermodels
 
+
+/-!
+## Necessary and sufficient observation criteria
+
+The earlier finite_type_discovery theorem proves the forward direction:
+eventually separating readouts on a finite source inventory give a common
+finite horizon and a correct partial classifier. We now prove the reverse
+direction. A correct classifier at a finite horizon cannot assign different
+source types to identical observation prefixes, hence must have seen a
+distinguishing coordinate for every pair of different source types.
+
+The result is exact for the same dependent observationPrefix, spinReadout,
+and Option-valued classifier as the original source; no type or label is
+fabricated for an unobserved signature. The finite-inventory assumption is
+needed only when deriving a uniform horizon from pairwise eventual
+separation. The necessity direction applies by elementary logic even
+when observations are computationally inaccessible.
+-/
+
+section ExactClassificationCriterion
+
+variable {P : Type u} [Fintype P]
+variable {Kind : Type v} {Obs : Nat → Type w}
+
+/-- Correct classification at a fixed horizon forces the intended types
+to be constant on the actual observation-prefix fibers. -/
+theorem classifier_correct_implies_type_constant
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
+    (N : Nat)
+    (classify : ((i : Fin (N + 1)) → Obs i.val) → Option Kind)
+    (hcorrect : ∀ p, classify (observationPrefix readout N p) =
+      some (typeOf p))
+    (p q : P)
+    (hsame : observationPrefix readout N p =
+      observationPrefix readout N q) :
+    typeOf p = typeOf q := by
+  have h := congrArg classify hsame
+  rw [hcorrect p, hcorrect q] at h
+  exact Option.some.inj h
+
+/-- A correct partial classifier exists at this fixed horizon precisely
+when all observationally identical source loops have the same type. -/
+theorem exists_classifier_iff_prefix_fibers_constant
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
+    (N : Nat) :
+    (∃ classify : (((i : Fin (N + 1)) → Obs i.val) → Option Kind),
+      ∀ p, classify (observationPrefix readout N p) =
+        some (typeOf p)) ↔
+      ∀ p q, observationPrefix readout N p =
+        observationPrefix readout N q → typeOf p = typeOf q := by
+  constructor
+  · rintro ⟨classify, hcorrect⟩ p q hsame
+    exact classifier_correct_implies_type_constant
+      typeOf readout N classify hcorrect p q hsame
+  · intro hfibers
+    refine ⟨prefixClassifier typeOf readout N, ?_⟩
+    intro p
+    exact prefixClassifier_correct typeOf readout N hfibers p
+
+/-- A finite successful classifier necessarily separates EVERY pair
+of different source types at some observed stage, without assuming a
+minimal horizon or an effective observation algorithm. -/
+theorem classifier_implies_eventual_separation
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n)
+    (N : Nat)
+    (classify : ((i : Fin (N + 1)) → Obs i.val) → Option Kind)
+    (hcorrect : ∀ p, classify (observationPrefix readout N p) =
+      some (typeOf p))
+    (p q : P) (hdiff : typeOf p ≠ typeOf q) :
+    ∃ n : Nat, readout n p ≠ readout n q := by
+  classical
+  by_contra hno
+  have hall : ∀ n : Nat, readout n p = readout n q := by
+    intro n
+    by_contra hneq
+    exact hno ⟨n, hneq⟩
+  have hprefix :
+      observationPrefix readout N p =
+        observationPrefix readout N q := by
+    funext i
+    exact hall i.val
+  exact hdiff (classifier_correct_implies_type_constant
+    typeOf readout N classify hcorrect p q hprefix)
+
+/-- Exact if-and-only-if completion of finite_type_discovery:
+pairwise eventual observation separation is not merely sufficient
+but also NECESSARY for some correct finite-prefix classifier. -/
+theorem finite_classifier_iff_eventual_separation
+    (typeOf : P → Kind) (readout : (n : Nat) → P → Obs n) :
+    (∃ N : Nat, ∃ classify :
+        (((i : Fin (N + 1)) → Obs i.val) → Option Kind),
+      ∀ p, classify (observationPrefix readout N p) =
+        some (typeOf p)) ↔
+      ∀ p q : P, typeOf p ≠ typeOf q →
+        ∃ n : Nat, readout n p ≠ readout n q := by
+  constructor
+  · rintro ⟨N, classify, hcorrect⟩ p q hdiff
+    exact classifier_implies_eventual_separation
+      typeOf readout N classify hcorrect p q hdiff
+  · intro hseparates
+    classical
+    let witness : P → P → Nat := fun p q =>
+      if h : typeOf p ≠ typeOf q then
+        Classical.choose (hseparates p q h)
+      else 0
+    have hdisting :
+        ∀ p q, typeOf p ≠ typeOf q →
+          readout (witness p q) p ≠ readout (witness p q) q := by
+      intro p q hpq
+      simpa [witness, hpq] using
+        (Classical.choose_spec (hseparates p q hpq))
+    exact finite_type_discovery typeOf readout witness hdisting
+
+end ExactClassificationCriterion
+
+section SpinClassificationCriterion
+
+variable {V : Type u} {E : V → V → Type v} {a : V}
+variable {P : Type w} [Fintype P]
+variable {Kind : Type z} {Obs : Nat → Type t}
+
+/-- Exact criterion for the EXISTING staged pending-loop spin reader:
+a finite correct classifier exists iff the supplied observations
+eventually separate every pair of different source types. Merely
+adding spin sheets proves neither half's hypotheses automatically. -/
+theorem finite_spin_classifier_iff_eventual_separation
+    (history : P → Path E a a) (typeOf : P → Kind)
+    (observe : (n : Nat) →
+      Path (iterEdge E n) (iterAnchor a n) (iterAnchor a n) → Obs n) :
+    (∃ N : Nat, ∃ classify :
+        (((i : Fin (N + 1)) → Obs i.val) → Option Kind),
+      ∀ p, classify
+          (observationPrefix (spinReadout history observe) N p) =
+          some (typeOf p)) ↔
+      ∀ p q : P, typeOf p ≠ typeOf q →
+        ∃ n : Nat, spinReadout history observe n p ≠
+          spinReadout history observe n q := by
+  exact finite_classifier_iff_eventual_separation
+    typeOf (spinReadout history observe)
+
+end SpinClassificationCriterion
+
+/-! The infinite source obstruction also excludes actual correct finite
+decoders, not just a common pair-separation horizon. -/
+
+/-- The original delayed-natural readout distinguishes each pair
+eventually but NO finite prefix permits a globally correct decoder
+of the source natural number. No finite-source premise is inserted. -/
+theorem delayedNat_no_correct_finite_classifier :
+    ¬ ∃ N : Nat, ∃ classify :
+        (((i : Fin (N + 1)) → Nat) → Option Nat),
+      ∀ p : Nat,
+        classify (fun i => delayedNatReadout i.val p) = some p := by
+  rintro ⟨N, classify, hcorrect⟩
+  obtain ⟨p, q, hpq, hsamen⟩ := delayedNat_no_uniform_horizon N
+  have hpref :
+      (fun i : Fin (N + 1) => delayedNatReadout i.val p) =
+      (fun i : Fin (N + 1) => delayedNatReadout i.val q) := by
+    funext i
+    have hi : i.val ≤ N := by omega
+    exact hsamen i.val hi
+  have htypes : some p = some q := by
+    calc
+      some p = classify
+          (fun i : Fin (N + 1) => delayedNatReadout i.val p) :=
+        (hcorrect p).symm
+      _ = classify
+          (fun i : Fin (N + 1) => delayedNatReadout i.val q) :=
+        congrArg classify hpref
+      _ = some q := hcorrect q
+  exact hpq (Option.some.inj htypes)
+
 end GRWTSK.CombinatoricsAndDiscreteMathematics.GraphTheory.RelationalHolonomy
